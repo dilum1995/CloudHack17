@@ -1,0 +1,37 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.product_id}}">
+        <div class="list card">
+          
+            <div class="item item-avatar">
+              <!-- <img src="avatar.jpg"> -->
+              {{chat.product_id}}
+              <h2>{{chat.product_name}}</h2>
+            </div>
+          
+            <div class="item item-image">
+              <img src="../img/adam.jpg">
+            </div>
+          
+            <a class="item item-icon-left assertive" href="#">
+              <i class="icon ion-music-note"></i>
+              ${{chat.product_price}}
+            </a>
+          
+          </div>
+        <!-- <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button> -->
+
+        <!-- list by Suleka -->
+        <ul class="list">
+        <li class="item" ng-repeat="n in [42, 42, 43, 43] track by $index">
+        {{ n }}
+        </li>
+        </ul>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
